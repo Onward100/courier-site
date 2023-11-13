@@ -360,7 +360,9 @@ body.dark-theme {
 .app__data {
   text-align: center;
 }
-
+.desktop{
+  display: none;
+}
 .app__description {
   margin-bottom: var(--mb-1-5);
 }
