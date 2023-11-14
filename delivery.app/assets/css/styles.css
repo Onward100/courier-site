@@ -360,9 +360,11 @@ body.dark-theme {
 .app__data {
   text-align: center;
 }
-.desktop{
+
+.desktop {
   display: none;
 }
+
 .app__description {
   margin-bottom: var(--mb-1-5);
 }
@@ -439,6 +441,11 @@ body.dark-theme {
 
 .footer__link {
   color: var(--text-color-light);
+  transition: .3s ease;
+}
+
+.footer__link:hover {
+  color: var(--first-color-alt);
 }
 
 .footer__social {
@@ -449,6 +456,11 @@ body.dark-theme {
 .footer__social-link {
   font-size: 1.25rem;
   color: var(--text-color-light);
+  transition: .3s ease;
+}
+
+.footer__social-link:hover {
+  color: var(--first-color-alt);
 }
 
 .footer__copy {
@@ -677,6 +689,27 @@ body.dark-theme {
   margin: auto 60px;
 }
 
+.login-container {
+  display: flex;
+  width: 100%;
+}
+
+.create-account-form {
+  position: absolute;
+  left: 120px;
+  top: 58px;
+  background: white;
+  border: 1px solid #EFEFEF;
+  box-shadow: 0px 4px 12px 0px #00000005;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 35px;
+  width: 430px;
+  line-height: 30px;
+  transition: .3s ease-in-out;
+  transform: translateX(-1000%);
+}
+
 .login-form {
   background: white;
   border: 1px solid #EFEFEF;
@@ -686,6 +719,7 @@ body.dark-theme {
   padding: 32px;
   width: 430px;
   line-height: 30px;
+  transition: .3s ease-in-out;
 }
 
 .login-wrapper input {
@@ -720,11 +754,6 @@ body.dark-theme {
 
 .login-form p {
   margin-top: 20px;
-}
-
-.help {
-  margin-left: 60px;
-  width: 100%;
 }
 
 .help-page {
@@ -777,14 +806,14 @@ body.dark-theme {
     text-align: center;
     margin-top: 10px;
   }
-  
+
   .getApp-buttons button {
     border: none;
     outline: none;
     background-color: var(--first-color);
     color: #e9e8e8;
     font-weight: bold;
-    border-radius:5px;
+    border-radius: 5px;
     width: 40%;
     padding: 10px;
   }
