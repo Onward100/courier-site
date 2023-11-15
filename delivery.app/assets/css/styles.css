@@ -763,6 +763,20 @@ body.dark-theme {
   display: block;
 }
 
+.qr-page {
+  width: 430px;
+  background-color: white;
+  margin: 100px 110px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.help-page img {
+  width: 200px;
+  height: 200px;
+}
+
 .getApp-page {
   display: none;
 }
@@ -787,11 +801,13 @@ body.dark-theme {
     left: 0 !important;
     width: 100% !important;
   }
-  .login-form p{
+
+  .login-form p {
     width: 100%;
     padding: 0;
   }
-  .login-form{
+
+  .login-form {
     width: 100% !important;
   }
 }
