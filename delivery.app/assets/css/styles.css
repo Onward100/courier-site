@@ -768,9 +768,13 @@ body.dark-theme {
 }
 
 /* mobile view for login page */
-@media (max-width: 370px) {
+@media (max-width: 375px) {
   .help-page {
     display: none;
+  }
+
+  .getApp-page {
+    display: none !important;
   }
 
   .login-wrapper {
@@ -779,8 +783,16 @@ body.dark-theme {
     padding: 0;
   }
 
-  .getApp-page {
-    display: none;
+  .create-account-form {
+    left: 0 !important;
+    width: 100% !important;
+  }
+  .login-form p{
+    width: 100%;
+    padding: 0;
+  }
+  .login-form{
+    width: 100% !important;
   }
 }
 
@@ -794,8 +806,8 @@ body.dark-theme {
   }
 
   .getApp-page {
-    display: block;
-    padding: 10px;
+    display: grid;
+    width: 100%;
   }
 
   .getApp-buttons {
