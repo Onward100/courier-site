@@ -760,21 +760,28 @@ body.dark-theme {
   background-color: var(--first-color-alt);
   height: 100vh;
   width: 100%;
-  display: block;
 }
 
 .qr-page {
   width: 430px;
   background-color: white;
-  margin: 100px 110px;
+  margin: 90px 105px;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
 }
 
-.help-page img {
+.qr-scan {
   width: 200px;
   height: 200px;
+}
+.app-img{
+  text-align: center;
+  margin-top: -50px;
+}
+.app-img a{
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .getApp-page {
