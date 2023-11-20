@@ -124,6 +124,28 @@ body.dark-theme {
 .dark-theme .footer {
   background-color: var(--container-color);
 }
+.dark-theme .login-page p{
+  color: var(--first-color-lighten);
+  opacity: .8;
+}
+.dark-theme .main2 h2{
+  color: var(--first-color-lighten);
+  opacity: .8;
+}
+.dark-theme .main2 h1{
+  color: white;
+}
+.dark-theme .main2 .cards-content{
+  background-color: #e9e8e8;
+}
+.dark-theme .login-page label{
+  color: var(--first-color-lighten);
+  opacity: .8;
+}
+.dark-theme .login-page h2{
+  color: var(--first-color-lighten);
+  opacity: .8;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
@@ -273,13 +295,15 @@ body.dark-theme {
 }
 
 .button1 {
-  display: inline-block;
-  color: #e9e8e8;
-  background-color: var(--first-color);
-  padding: .75rem 1.5rem;
-  border-radius: 3rem;
   font-weight: var(--font-semi-bold);
-  transition: .3s;
+  text-decoration: none;
+  background-color: var(--first-color);
+  color: #e9e8e8;
+  transition: .3s ease;
+  opacity: .9;
+  border: 1px solid var(--first-color);
+  padding: .5rem 1.5rem;
+  border-radius: 3rem;
 }
 
 .button:hover {
@@ -288,6 +312,7 @@ body.dark-theme {
 
 .button1:hover {
   background-color: var(--first-color-alt);
+  color: #e9e8e8;
 }
 
 .button__header {
@@ -876,7 +901,7 @@ body.dark-theme {
   text-decoration: none;
   padding: 10px;
   border-radius: 10px;
-  background-color: #efeaea;
+  background-color: white;
   box-shadow: 0px 4px 12px 5px #00000005;
 }
 
@@ -887,7 +912,11 @@ body.dark-theme {
   border-radius: 10px 10px 0 0;
 }
 
-.main h1 {
+.main2{
+  padding: 30px;
+}
+
+.main2 h1 {
   font-size: 40px;
   font-weight: bold;
   color: var(--first-color-alt);
@@ -900,28 +929,31 @@ body.dark-theme {
 }
 
 /* ======= Blog Page (mobile view) ======= */
-@media (max-width:375px){
-.cards {
-  display: block;
-  margin: 0;
-}
-.main h1{
-  font-size: 26px;
-  margin-top: -40px;
-}
-.cards-content{
-  background-color: white;
-  width: 100%;
-}
+@media (max-width:375px) {
+  .cards {
+    display: block;
+    margin: 0;
+  }
+
+  .main2 h1 {
+    font-size: 26px;
+    margin-top: -40px;
+  }
+
+  .cards-content {
+    background-color: white;
+    width: 100%;
+  }
 }
 
 /* For medium devices */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   .cards {
     margin: 0;
     width: 100%;
   }
-  .cards-content{
+
+  .cards-content {
     width: 100%;
   }
 }
